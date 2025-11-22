@@ -1,0 +1,121 @@
+.certificates-hero {
+  height: 50vh;
+  min-height: 350px;
+  background: linear-gradient(rgba(27, 90, 142, 0.85), rgba(27, 90, 142, 0.85)),
+    url(/public/assets/certificates_bg.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-top: 90px;
+}
+
+.certificates-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif;
+}
+
+.certificates-hero p {
+  font-size: 1.3rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.quality-commitment {
+  background-color: var(--light);
+}
+
+.quality-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.quality-text {
+  flex: 1;
+}
+
+.quality-text h2 {
+  font-size: 2.3rem;
+  margin-bottom: 25px;
+  color: var(--primary);
+  font-family: 'Playfair Display', serif;
+}
+
+.quality-text p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  color: var(--dark-light);
+  font-size: 1.05rem;
+}
+
+.quality-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+  color: var(--dark);
+}
+
+.feature-item i {
+  color: var(--success);
+  font-size: 1.2rem;
+}
+
+.quality-image {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px var(--shadow);
+}
+
+.quality-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media screen and (max-width: 992px) {
+  .quality-content {
+    flex-direction: column;
+  }
+
+  .quality-features {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .certificates-hero {
+    margin-top: 70px;
+  }
+
+  .certificates-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .certificates-hero p {
+    font-size: 1.1rem;
+  }
+
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+}

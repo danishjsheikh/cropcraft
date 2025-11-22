@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root {
+  /* Primary Blues (from logo) */
+  --primary: #1B5A8E;
+  --primary-dark: #143F66;
+  --primary-light: #2873A6;
+  
+  /* Secondary/Accent (Golden from logo) */
+  --secondary: #D4A574;
+  --secondary-dark: #B88D5E;
+  --secondary-light: #E6C99B;
+  
+  /* Supporting Colors */
+  --success: #4A7C59;
+  --accent: #5B8FB9;
+  
+  /* Neutrals */
+  --dark: #2C3E50;
+  --dark-light: #5A6C7D;
+  --light: #F5F7FA;
+  --card-bg: #FFFFFF;
+  --background: #FAFBFC;
+  
+  /* Functional */
+  --border: #D1D9E6;
+  --shadow: rgba(27, 90, 142, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--dark);
+  background-color: var(--background);
+  line-height: 1.6;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Enhanced Button Styles */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 20px var(--shadow);
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
+  box-shadow: 0 4px 12px rgba(212, 165, 116, 0.3);
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(135deg, var(--secondary-dark), var(--secondary));
+}
+
+.section {
+  padding: 80px 0;
+}
+
+/* Enhanced Section Title */
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  position: relative;
+  color: var(--dark);
+  font-weight: 600;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  border-radius: 2px;
+}
+
+/* Enhanced Animations */
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from { 
+    transform: translateY(50px); 
+    opacity: 0; 
+  }
+  to { 
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+}
+
+@keyframes zoomIn {
+  from { 
+    transform: scale(0.95); 
+    opacity: 0; 
+  }
+  to { 
+    transform: scale(1); 
+    opacity: 1; 
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+.slide-up {
+  animation: slideUp 0.8s ease forwards;
+}
+
+.zoom-in {
+  animation: zoomIn 0.8s ease forwards;
+}
+
+/* Origin Badge Component */
+.origin-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  background-color: var(--success);
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 20px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 10;
+}
+
+.origin-badge.india {
+  background: linear-gradient(135deg, #FF9933, #138808);
+}
+
+.origin-badge.kenya {
+  background: linear-gradient(135deg, #006600, #BB0000);
+}
+
+.origin-badge.uganda {
+  background: linear-gradient(135deg, #FCDC04, #D90000);
+}
+
+/* Quality Indicator */
+.quality-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--success);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.quality-indicator i {
+  color: var(--secondary);
+}

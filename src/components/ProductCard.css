@@ -1,0 +1,157 @@
+.product-card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px var(--shadow);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  position: relative;
+}
+
+.product-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px var(--shadow);
+}
+
+.product-info p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-img {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  position: relative;
+}
+
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-img img {
+  transform: scale(1.1);
+}
+
+.product-info {
+  padding: 25px;
+}
+
+.product-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: var(--dark);
+}
+
+.product-info p {
+  font-size: 0.95rem;
+  color: var(--dark-light);
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 700px;
+  max-height: 90vh;
+  overflow-y: auto;
+  width: 100%;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  color: var(--dark);
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: var(--primary);
+}
+
+.modal-img-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 35px;
+  color: white;
+  background-color: rgba(27, 90, 142, 0.7);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: rgba(27, 90, 142, 0.9);
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.modal-description p,
+.product-description p {
+  text-align: left;
+  margin: 10px 0;
+  line-height: 1.7;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}

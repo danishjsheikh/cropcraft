@@ -1,0 +1,284 @@
+.contact-hero {
+  height: 50vh;
+  min-height: 350px;
+  background: linear-gradient(rgba(27, 90, 142, 0.85), rgba(27, 90, 142, 0.85)),
+    url("/public/assets/contact_bg.jpg") center/cover no-repeat;
+  color: white;
+  padding: 100px 20px;
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif;
+}
+
+.contact-hero p {
+  font-size: 1.3rem;
+}
+
+.contact-info-card,
+.about-summary-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px var(--shadow);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+
+.contact-info-card:hover,
+.about-summary-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px var(--shadow);
+}
+
+.contact-info-card {
+  padding: 40px;
+}
+
+.contact-info-card h2 {
+  margin-bottom: 30px;
+  position: relative;
+  color: var(--dark);
+  font-size: 2rem;
+}
+
+.contact-info-card h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+}
+
+.about-summary-card {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-blocks-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.info-block {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.info-icon {
+  font-size: 1.3rem;
+  color: white;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.info-content {
+  flex: 1;
+}
+
+.info-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: var(--dark);
+}
+
+.info-content p {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  color: var(--dark-light);
+  line-height: 1.7;
+}
+
+.info-content a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.info-content a:hover {
+  color: var(--accent);
+}
+
+.contact-details-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.contact-details-grid .info-block {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-summary-card h2 {
+  margin-bottom: 30px;
+  position: relative;
+  font-size: 2rem;
+  color: var(--dark);
+}
+
+.about-summary-card h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+}
+
+.about-summary-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-summary-content > *:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.company-intro {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--dark-light);
+}
+
+.info-boxes-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.company-mission,
+.company-vision,
+.company-expertise {
+  padding: 25px;
+  border-radius: 8px;
+  margin-top: 0;
+  border-left: 4px solid;
+}
+
+.company-mission {
+  background-color: rgba(27, 90, 142, 0.05);
+  border-left-color: var(--primary);
+}
+
+.company-vision {
+  background-color: rgba(74, 124, 89, 0.05);
+  border-left-color: var(--success);
+}
+
+.company-expertise {
+  background-color: rgba(212, 165, 116, 0.1);
+  border-left-color: var(--secondary);
+}
+
+.company-mission h3,
+.company-vision h3,
+.company-expertise h3 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.company-mission h3 {
+  color: var(--primary);
+}
+
+.company-vision h3 {
+  color: var(--success);
+}
+
+.company-expertise h3 {
+  color: var(--secondary-dark);
+}
+
+.company-mission p,
+.company-vision p,
+.company-expertise p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--dark-light);
+}
+
+.value-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.value-tags span {
+  background-color: var(--light);
+  color: var(--dark);
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.value-tags span:hover {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white;
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 991px) {
+  .contact-details-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .info-boxes-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero {
+    margin-top: 70px;
+  }
+
+  .contact-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .info-boxes-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info-card,
+  .about-summary-card {
+    padding: 30px 20px;
+  }
+}

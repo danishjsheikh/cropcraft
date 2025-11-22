@@ -1,0 +1,110 @@
+.uae-advantage {
+  background: linear-gradient(135deg, var(--light) 0%, var(--background) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.section-intro {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 50px;
+  font-size: 1.15rem;
+  color: var(--dark-light);
+  line-height: 1.8;
+}
+
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.advantage-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 20px var(--shadow);
+  transition: all 0.3s ease;
+  border-top: 4px solid transparent;
+}
+
+.advantage-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px var(--shadow);
+  border-top-color: var(--primary);
+}
+
+.advantage-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 25px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.advantage-card:hover .advantage-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.advantage-stat {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 12px;
+  font-family: 'Playfair Display', serif;
+}
+
+.advantage-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: var(--dark);
+}
+
+.advantage-card p {
+  font-size: 0.95rem;
+  color: var(--dark-light);
+  line-height: 1.7;
+}
+
+.uae-benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px var(--shadow);
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1rem;
+  color: var(--dark);
+}
+
+.benefit-item i {
+  color: var(--success);
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .advantages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .uae-benefits {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+  }
+}
