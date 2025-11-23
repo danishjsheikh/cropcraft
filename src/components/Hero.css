@@ -134,11 +134,11 @@
   .hero {
     min-height: 520px;
     height: auto;
-    padding-top: 70px;
+    padding-top: 95px;
     align-items: flex-start;
   }
   .hero-content {
-    padding-top: 45px;
+    padding-top: 75px;  /* Adjust this so 1st line is below header */
     max-width: 98vw;
   }
   .hero-content h1 {
@@ -151,6 +151,7 @@
     flex-direction: column;
     gap: 15px;
     align-items: flex-start;
+    padding-bottom: 15px;
   }
   .morris-intro {
     position: static;
@@ -175,4 +176,30 @@
 @keyframes fadeIn {
   from { opacity: 0; }
   to   { opacity: 1; }
+}
+
+@media screen and (max-width: 700px) {
+  .morris-intro {
+    position: static;
+    margin: 32px auto 18px auto; /* more space from hero text/buttons */
+    max-width: 95vw;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    padding: 12px 7px 14px 7px; /* tighter padding for mobile */
+    text-align: center;
+  }
+  .morris-intro h4 {
+    font-size: 0.95rem;
+  }
+  .morris-intro h3 {
+    font-size: 1.13rem;
+    margin-bottom: 3px;
+  }
+  .morris-intro p {
+    font-size: 0.98rem;
+    line-height: 1.6; /* more readable */
+    margin-bottom: 0;
+    margin-top: 3px;
+  }
 }

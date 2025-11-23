@@ -42,7 +42,7 @@ const Footer = () => {
               <Link to="/products#coconut">Semi-Husked Coconuts</Link>
             </li>
             <li>
-              <Link to="/products#rice">Matti Rice</Link>
+              <Link to="/products#rice">Rice</Link>
             </li>
             <li>
               <Link to="/products#onion">Red Onions</Link>
@@ -65,7 +65,7 @@ const Footer = () => {
             <li>
               <p>
                 <i className="fas fa-map-marker-alt"></i>
-                <a href="https://maps.app.goo.gl" target="_blank" rel="noopener noreferrer">
+                <a href="https://maps.app.goo.gl/mEukvbqcrTHMWFnS7" target="_blank" rel="noopener noreferrer">
                   Property Investment Office 4, F1 316, 1st Floor, 
                   Dubai Investment Park First, Dubai, UAE
                 </a>

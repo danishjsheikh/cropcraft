@@ -1,5 +1,16 @@
 import React from "react";
 import "./ContactPage.css";
+import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+
+const GOOGLE_API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
+
+const containerStyle = {
+  width: "100%",
+  height: "250px",
+};
+
+const location = { lat: 24.999681029514054, lng:  55.16883244727098 }
+
 
 const ContactPage = () => {
   return (
@@ -25,13 +36,24 @@ const ContactPage = () => {
                   <div className="info-content">
                     <h3>Dubai Office</h3>
                     <p>
-                      <a href="https://maps.app.goo.gl" target="_blank" rel="noopener noreferrer">
-                        Property Investment Office 4<br />
-                        F1 316, 1st Floor<br />
-                        Dubai Investment Park First<br />
+                      <a href="https://maps.app.goo.gl/mEukvbqcrTHMWFnS7" target="_blank" rel="noopener noreferrer">
+                        Property Investment Office 4 
+                        F1 316, 1st Floor
+                        Dubai Investment Park First
                         Dubai, UAE
                       </a>
                     </p>
+                    <div className="mini-map">
+                        <LoadScript googleMapsApiKey={GOOGLE_API_KEY}>
+                          <GoogleMap
+                            mapContainerStyle={containerStyle}
+                            center={location}
+                            zoom={17}
+                            >
+                          <Marker position={location} />
+                          </GoogleMap>
+                        </LoadScript>
+                      </div>
                   </div>
                 </div>
 

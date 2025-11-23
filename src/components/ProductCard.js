@@ -1,6 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './ProductCard.css';
 
+const stripHtml = (html = '') =>
+  html.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+
 const ProductCard = ({ product, delay = 0 }) => {
   const cardRef = useRef(null);
   const [showModal, setShowModal] = useState(false);
@@ -36,13 +39,24 @@ const ProductCard = ({ product, delay = 0 }) => {
       },
       { threshold: 0.2 }
     );
-
     if (cardRef.current) observer.observe(cardRef.current);
-
     return () => {
       if (cardRef.current) observer.unobserve(cardRef.current);
     };
   }, [delay]);
+
+  // Lock scroll when modal is open
+  useEffect(() => {
+    if (showModal) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => { document.body.style.overflow = ""; };
+  }, [showModal]);
+
+  // Only short details in card view
+  const shortDescription = stripHtml(product.description).slice(0, 100) + (stripHtml(product.description).length > 100 ? '…' : '');
 
   return (
     <>
@@ -60,14 +74,14 @@ const ProductCard = ({ product, delay = 0 }) => {
         </div>
         <div className="product-info">
           <h3>{product.name}</h3>
-          <div className="product-description" dangerouslySetInnerHTML={{ __html: product.description }}></div>
+          <div className="product-description">{shortDescription}</div>
           <button className="btn" onClick={() => setShowModal(true)}>View Details</button>
         </div>
       </div>
 
       {showModal && (
         <div className="modal-overlay" onClick={() => setShowModal(false)}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+          <div className="modal-content" onClick={e => e.stopPropagation()}>
             <button className="close-btn" onClick={() => setShowModal(false)}>&times;</button>
             <div className="modal-img-container">
               <img
@@ -75,7 +89,7 @@ const ProductCard = ({ product, delay = 0 }) => {
                 alt={product.name}
                 className="modal-image"
               />
-              {(images.length > 1) && (
+              {images.length > 1 && (
                 <>
                   <button className="prev-btn" onClick={handlePrevImage}>
                     &#8249;
@@ -86,13 +100,15 @@ const ProductCard = ({ product, delay = 0 }) => {
                 </>
               )}
             </div>
-            <h2>{product.name}</h2>
-            {product.origin && (
-              <div className={`origin-badge ${product.origin.toLowerCase()}`} style={{position: 'relative', top: 'auto', right: 'auto', marginBottom: '15px'}}>
-                <i className="fas fa-map-marker-alt"></i>
-                Origin: {product.origin}
-              </div>
-            )}
+            <div className="modal-header">
+              <h2>{product.name}</h2>
+              {product.origin && (
+                <div className={`modal-origin origin-badge ${product.origin.toLowerCase()}`}>
+                  <i className="fas fa-map-marker-alt"></i>
+                  Origin: {product.origin}
+                </div>
+              )}
+            </div>
             <div className="modal-description" dangerouslySetInnerHTML={{ __html: product.description }}></div>
           </div>
         </div>

@@ -19,14 +19,6 @@ const HomePage = () => {
     },
     {
       id: 2,
-      name: "Matti Rice",
-      description: `<p>Unpolished red rice from Karnataka and Kerala with rich nutritional value and earthy flavor.</p>`,
-      image: ["/assets/products/rice/matti_rice.jpg"],
-      category: "rice",
-      origin: "India"
-    },
-    {
-      id: 3,
       name: "Red Onions",
       description: `<p>Premium red onions from Nashik, Maharashtra - India's onion heartland. Deep color and excellent shelf life.</p>`,
       image: ["/assets/products/onions/onion.jpg"],
@@ -34,15 +26,15 @@ const HomePage = () => {
       origin: "India"
     },
     {
-      id: 4,
+      id: 3,
       name: "Pomegranates",
       description: `<p>Juicy, sweet pomegranates from Nashik with vibrant red arils packed with antioxidants.</p>`,
-      image: ["/assets/products/pomegranate/pomegranate.jpg"],
+      image: ["/assets/products/pomegranates/pomegranate.jpg"],
       category: "pomegranate",
       origin: "India"
     },
     {
-      id: 5,
+      id: 4,
       name: "Avocados (Hass & Fuerte)",
       description: `<p>Premium avocados from Kenya and Uganda with rich, creamy texture and high oil content.</p>`,
       image: ["/assets/products/avocados/avocado.jpg"],
@@ -50,13 +42,22 @@ const HomePage = () => {
       origin: "Kenya"
     },
     {
-      id: 6,
+      id: 5,
       name: "Bananas (Multiple Varieties)",
       description: `<p>Cavendish, Elaichi, and Red bananas from Nashik and Tamil Nadu. Sweet, aromatic, and nutritious.</p>`,
-      image: ["/assets/products/bananas/bananas.jpg"],
+      image: ["/assets/products/bananas/banana.jpg"],
       category: "banana",
       origin: "India"
-    }
+    },
+    
+    {
+      id: 6,
+      name: "Matti Rice",
+      description: `<p>Unpolished red rice from Karnataka and Kerala with rich nutritional value and earthy flavor.</p>`,
+      image: ["/assets/products/rice/matti_rice.jpg"],
+      category: "rice",
+      origin: "India"
+    },
   ];
 
   const services = [
