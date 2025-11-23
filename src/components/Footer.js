@@ -77,7 +77,7 @@ const Footer = () => {
             </li>
             <li>
               <i className="fas fa-envelope"></i> 
-              <a href="mailto:info@cropcraft.ae">info@cropcraft.ae</a>
+              <a href="mailto:morris@cropcraft.ae">morris@cropcraft.ae</a>
             </li>
           </ul>
         </div>
