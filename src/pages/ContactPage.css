@@ -282,3 +282,16 @@
     padding: 30px 20px;
   }
 }
+
+.mini-map {
+  width: 100%;
+  margin: 18px 0 0 0;
+}
+.mini-map iframe {
+  width: 100%!important;
+  min-height: 180px;
+  max-height: 280px;
+  border-radius: 8px;
+  border: none;
+  display: block;
+}

@@ -1,16 +1,5 @@
 import React from "react";
 import "./ContactPage.css";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
-
-const GOOGLE_API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
-
-const containerStyle = {
-  width: "100%",
-  height: "250px",
-};
-
-const location = { lat: 24.999681029514054, lng:  55.16883244727098 }
-
 
 const ContactPage = () => {
   return (
@@ -37,26 +26,24 @@ const ContactPage = () => {
                     <h3>Dubai Office</h3>
                     <p>
                       <a href="https://maps.app.goo.gl/mEukvbqcrTHMWFnS7" target="_blank" rel="noopener noreferrer">
-                        Property Investment Office 4 
-                        F1 316, 1st Floor
-                        Dubai Investment Park First
+                        Property Investment Office 4, 
+                        F1 316, 1st Floor, 
+                        Dubai Investment Park First, 
                         Dubai, UAE
                       </a>
                     </p>
                     <div className="mini-map">
-                        <LoadScript googleMapsApiKey={GOOGLE_API_KEY}>
-                          <GoogleMap
-                            mapContainerStyle={containerStyle}
-                            center={location}
-                            zoom={17}
-                            >
-                          <Marker position={location} />
-                          </GoogleMap>
-                        </LoadScript>
-                      </div>
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2975.684337694705!2d55.16676490115919!3d24.999386280932175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f729ce4e69249%3A0x3021d1890d14a096!2sX5X9%2BVG2%20-%20Green%20Community%20Village%20-%20Dubai%20-%20United%20Arab%20Emirates!5e1!3m2!1sen!2sin!4v1763892082382!5m2!1sen!2sin"
+                        height="250"
+                        style={{ border: 0, borderRadius: "8px" }}
+                        allowFullScreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title="Dubai Office Location"
+                      />
+                    </div>
                   </div>
                 </div>
-
                 <div className="contact-details-grid">
                   <div className="info-block contact-detail-item">
                     <div className="info-icon">
@@ -77,9 +64,7 @@ const ContactPage = () => {
                     <div className="info-content">
                       <h3>Email</h3>
                       <p>
-                        <a href="mailto:info@cropcraft.ae">
-                          info@cropcraft.ae
-                        </a>
+                        <a href="mailto:info@cropcraft.ae">info@cropcraft.ae</a>
                       </p>
                     </div>
                   </div>
