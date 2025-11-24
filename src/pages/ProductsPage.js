@@ -23,12 +23,11 @@ const ProductsPage = () => {
       <p><strong>Benefits:</strong> Rich in electrolytes, healthy fats, antimicrobial properties, widely used in food & wellness industries</p>
 
       <p>🧺 <strong>Packing Options</strong><br>
-      <strong>1. PP Bags:</strong> 25 coconuts per bag (~13–14 kg)<br>
-      <strong>2. Gunny Bags:</strong> 25 coconuts per eco-friendly jute bag<br>
-      <strong>3. Custom Packing:</strong> As per buyer requirements</p>
+      <strong>1. PP Bags:</strong> 25 coconuts per bag (~13 kg)<br>
+      <strong>2. Custom Packing:</strong> As per buyer requirements</p>
 
       <p>📦 <strong>Container Loading Capacity</strong><br>
-      <strong>40-foot Reefer Container:</strong> Approx. 1,000 bags (~25,000 kg)</p>
+      <strong>40-foot Reefer Container:</strong> Approx. ~2100-2200 bags</p>
       `,
       image: [
         "/assets/products/coconuts/coconut.jpg",
@@ -54,9 +53,10 @@ const ProductsPage = () => {
       <p><strong>Benefits:</strong> Rich in antioxidants like quercetin and anthocyanins; supports heart health</p>
 
       <p>🧺 <strong>Packing Options</strong><br>
-      <strong>1. Mesh Bags:</strong> 6 kg / 10 kg / 20 kg<br>
+      <strong>1. Mesh Bags:</strong> 6 kg / 10 kg / 18 kg<br>
       <strong>2. Palletized Packing:</strong> Available on request<br>
-      <strong>3. Custom Branding:</strong> BOPP printed bags available</p>
+      <strong>3. Custom Branding:</strong> BOPP printed bags available<br>
+      <strong>Note:</strong> Custom Packing and Palletization for EU / UK / Far East destinations</p>
 
       <p>📦 <strong>Container Loading Conditions</strong><br>
       Reefer temperature: 45–55°F<br>
@@ -103,9 +103,9 @@ const ProductsPage = () => {
       id: 4,
       name: "Avocados (Hass & Fuerte)",
       description: `
-      <p>High-quality Avocados sourced from Kenya and Uganda, known for their rich, creamy texture and high oil content. Popular varieties include Hass and Fuerte, suitable for export and retail markets.</p>
+      <p>High-quality Avocados sourced from East Africa, known for their rich, creamy texture and high oil content. Popular varieties include Hass and Fuerte, suitable for export and retail markets.</p>
 
-      <p><strong>Origin:</strong> Kenya & Uganda</p>
+      <p><strong>Origin:</strong> East Africa</p>
 
       <p><strong>Varieties:</strong> Hass, Fuerte</p>
 
@@ -122,6 +122,8 @@ const ProductsPage = () => {
 
       <p>📦 <strong>Container Loading Capacity</strong><br>
       <strong>40-foot Reefer:</strong> Approx. 20–22 MT</p>
+      
+      <p><strong>Shipment Mode:</Strong> Sea and Air</p>
       `
       ,
       image: [
@@ -129,7 +131,7 @@ const ProductsPage = () => {
         "/assets/products/avocados/avocado_1.jpg"
       ],
       category: "avocado",
-      origin: "Kenya"
+      origin: "East Africa"
     },
     {
       id: 5,

@@ -23,28 +23,30 @@ const Hero = () => {
     }, 800);
   }, []);
 
-  return (
-    <section className="hero">
-      <div className="hero-content container">
-        <h1 ref={titleRef}>Premium Agricultural <span>Commodities</span></h1>
-        <p ref={subtitleRef}>
-          Sourcing excellence from India and East Africa, delivered globally from Dubai. 
-          Quality you can trust, logistics you can rely on.
-        </p>
-        <div className="hero-cta" ref={ctaRef}>
-          <Link to="/products" className="btn">Explore Products</Link>
-          <Link to="/contact" className="btn btn-secondary">Get in Touch</Link>
-        </div>
+return (
+  <section className="hero">
+    <div className="hero-content container">
+      <h1 ref={titleRef}>Premium Agricultural <span>Commodities</span></h1>
+      <p ref={subtitleRef}>
+        Cropcraft specializes in the import of premium agricultural and various other goods from both India and international sources, in addition to re-exporting agricultural commodities globally from its base in the UAE.
+      </p>
+      <div className="hero-cta" ref={ctaRef}>
+        <Link to="/products" className="btn">Explore Products</Link>
+        <Link to="/contact" className="btn btn-secondary">Get in Touch</Link>
       </div>
+    </div>
 
-      {/* Morris Profile Badge */}
-      <div className="morris-intro">
-        <h4>Led by Experience</h4>
-        <h3>Morris Indru Wadhwani</h3>
-        <p>30+ years of dedicated expertise in agricultural export operations</p>
-      </div>
-    </section>
-  );
+    {/* Morris Profile Badge */}
+    <div className="morris-intro">
+      <h4>Led by Experience</h4>
+      <h3>Morris Indru Wadhwani</h3>
+      <p>
+       30+ years of dedicated experience across all facets of the export business
+      </p>
+    </div>
+  </section>
+);
+
 };
 
 export default Hero;

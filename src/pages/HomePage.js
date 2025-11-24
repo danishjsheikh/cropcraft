@@ -36,10 +36,10 @@ const HomePage = () => {
     {
       id: 4,
       name: "Avocados (Hass & Fuerte)",
-      description: `<p>Premium avocados from Kenya and Uganda with rich, creamy texture and high oil content.</p>`,
+      description: `<p>Premium avocados from East Africa with rich, creamy texture and high oil content.</p>`,
       image: ["/assets/products/avocados/avocado.jpg"],
       category: "avocado",
-      origin: "Kenya"
+      origin: "East Africa"
     },
     {
       id: 5,

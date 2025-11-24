@@ -19,7 +19,7 @@ const MorrisProfile = () => {
             <p className="profile-bio">
               Cropcraft Goods Wholesalers LLC is headed by Morris Wadhwani, a dedicated 
               professional with over 30 years of comprehensive experience across all 
-              facets of the agricultural export business. His expertise spans quality 
+              facets of the export business. His expertise spans quality 
               control, international logistics, regulatory compliance, and building 
               lasting relationships with suppliers and clients worldwide.
             </p>
