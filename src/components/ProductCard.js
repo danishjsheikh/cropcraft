@@ -63,7 +63,7 @@ const ProductCard = ({ product, delay = 0 }) => {
       <div className="product-card" ref={cardRef}>
         {/* Origin Badge */}
         {product.origin && (
-          <div className={`origin-badge ${product.origin.toLowerCase().replace(/ /g, '-')}`}>
+          <div className={`origin-badge origin-badge ${product.origin.toLowerCase().replace(/ /g, '-')}`}>
             <i className="fas fa-map-marker-alt"></i>
             {product.origin}
           </div>
@@ -103,7 +103,7 @@ const ProductCard = ({ product, delay = 0 }) => {
             <div className="modal-header">
               <h2>{product.name}</h2>
               {product.origin && (
-                <div className={`origin-badge ${product.origin.toLowerCase().replace(/ /g, '-')}`}>
+                <div className={`modal-origin origin-badge  ${product.origin.toLowerCase().replace(/ /g, '-')}`}>
                   <i className="fas fa-map-marker-alt"></i>
                   Origin: {product.origin}
                 </div>
