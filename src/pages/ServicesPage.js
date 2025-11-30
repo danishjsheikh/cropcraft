@@ -9,14 +9,14 @@ const ServicesPage = () => {
       id: 1,
       title: "Sourcing & Procurement",
       description:
-        "Direct sourcing of premium agricultural products from trusted farms in India and East Africa. Our team conducts rigorous quality checks and maintains close relationships with farmers to ensure consistent supply of the finest commodities.",
+        "Direct sourcing of premium agricultural products from trusted farms in India and other global destinations. Our team conducts rigorous quality checks and maintains close relationships with farmers to ensure consistent supply of the finest commodities.",
       icon: "fas fa-seedling",
     },
     {
       id: 2,
       title: "Export Operations",
       description:
-        "Comprehensive export services from India and East Africa to global markets. We handle all aspects of international trade including documentation, compliance, and regulatory requirements with expertise and precision.",
+        "Comprehensive export services from India and other global destinations to global markets. We handle all aspects of international trade including documentation, compliance, and regulatory requirements with expertise and precision.",
       icon: "fas fa-plane-departure",
     },
     {
@@ -33,13 +33,13 @@ const ServicesPage = () => {
         "End-to-end logistics management including freight coordination, warehousing, and distribution. Access to world-class ports like Jebel Ali ensures reliable and cost-effective shipping solutions.",
       icon: "fas fa-shipping-fast",
     },
-    {
-      id: 5,
-      title: "Documentation & Compliance",
-      description:
-        "Complete management of export/import documentation, customs clearance, and regulatory compliance. We ensure all shipments meet international standards and destination country requirements.",
-      icon: "fas fa-file-contract",
-    },
+    // {
+    //   id: 5,
+    //   title: "Documentation & Compliance",
+    //   description:
+    //     "Complete management of export/import documentation, customs clearance, and regulatory compliance. We ensure all shipments meet international standards and destination country requirements.",
+    //   icon: "fas fa-file-contract",
+    // },
     {
       id: 6,
       title: "Quality Assurance",
@@ -90,8 +90,8 @@ const ServicesPage = () => {
               </div>
               <h3>Experienced Leadership</h3>
               <p>
-                Led by Morris Wadhwani with 3+ years of dedicated expertise in
-                all facets of agricultural export operations.
+                Led by Morris Wadhwani with 30+ years of dedicated expertise in
+                all facets of the export business.
               </p>
             </div>
 
@@ -112,7 +112,7 @@ const ServicesPage = () => {
               </div>
               <h3>Trusted Partnerships</h3>
               <p>
-                Strong farmer networks in India and East Africa ensure
+                Strong farmer networks in India and other Global Destinations ensure
                 consistent supply of premium quality products.
               </p>
             </div>
