@@ -70,7 +70,7 @@ const HomePage = () => {
     {
       id: 2,
       title: "Export & Re-Export",
-      description: "Seamless export operations from UAE to global markets, leveraging Dubai's strategic position as a trade hub.",
+      description: "Seamless export operations to and from UAE to global markets, leveraging Dubai's strategic position as a trade hub.",
       icon: "fas fa-globe"
     },
     {
