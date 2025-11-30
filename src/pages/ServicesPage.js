@@ -12,13 +12,13 @@ const ServicesPage = () => {
         "Direct sourcing of premium agricultural products from trusted farms in India and other global destinations. Our team conducts rigorous quality checks and maintains close relationships with farmers to ensure consistent supply of the finest commodities.",
       icon: "fas fa-seedling",
     },
-    {
-      id: 2,
-      title: "Export Operations",
-      description:
-        "Comprehensive export services from India and other global destinations to global markets. We handle all aspects of international trade including documentation, compliance, and regulatory requirements with expertise and precision.",
-      icon: "fas fa-plane-departure",
-    },
+    // {
+    //   id: 2,
+    //   title: "Export Operations",
+    //   description:
+    //     "Comprehensive export services from India and other global destinations to global markets. We handle all aspects of international trade including documentation, compliance, and regulatory requirements with expertise and precision.",
+    //   icon: "fas fa-plane-departure",
+    // },
     {
       id: 3,
       title: "Re-Export from UAE",
