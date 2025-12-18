@@ -44,6 +44,33 @@ const ContactPage = () => {
                     </div>
                   </div>
                 </div>
+                <div className="info-block">
+                  <div className="info-icon">
+                    <i className="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div className="info-content">
+                    <h3>Sales Office</h3>
+                    <p>
+                      <a href="https://maps.app.goo.gl/AdbUgtgWLp5w5wfF9" target="_blank" rel="noopener noreferrer">
+                      Cropcraft Goods Wholesalers LLC,
+                      Unique Time Business Centre,
+                      Union Co op Society 1st Floor,
+                      Office No 8
+                      Ral Al Khor Industrial Area 3
+                      </a>
+                    </p>
+                    <div className="mini-map">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3267.605484529046!2d55.38679503647939!3d25.175500987401808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDEwJzMxLjciTiA1NcKwMjMnMTIuNCJF!5e1!3m2!1sen!2sin!4v1766043088392!5m2!1sen!2sin" 
+                        height="250"
+                        style={{ border: 0, borderRadius: "8px" }}
+                        allowFullScreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title="Dubai Office Location"
+                      />
+                    </div>
+                </div>
+                </div>
                 <div className="contact-details-grid">
                   <div className="info-block contact-detail-item">
                     <div className="info-icon">
