@@ -72,6 +72,19 @@ const Footer = () => {
               </p>
             </li>
             <li>
+              <p>
+                <i className="fas fa-map-marker-alt"></i>
+                <a href="https://maps.app.goo.gl/tnihPgQNw1dm6e8PA" target="_blank" rel="noopener noreferrer">
+                      Cropcraft Goods Wholesalers LLC,
+                      Unique Time Business Centre,
+                      Union Co op Society 1st Floor,
+                      Office No 8,
+                      Ral Al Khor Industrial Area 3,
+                      Dubai, UAE
+                </a>
+              </p>
+            </li>
+            <li>
               <i className="fas fa-phone"></i> 
               <a href="tel:+971522029135">+971 52 202 9135</a>
             </li>

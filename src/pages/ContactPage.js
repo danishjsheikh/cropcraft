@@ -51,12 +51,13 @@ const ContactPage = () => {
                   <div className="info-content">
                     <h3>Sales Office</h3>
                     <p>
-                      <a href="https://maps.app.goo.gl/AdbUgtgWLp5w5wfF9" target="_blank" rel="noopener noreferrer">
+                      <a href="https://maps.app.goo.gl/tnihPgQNw1dm6e8PA" target="_blank" rel="noopener noreferrer">
                       Cropcraft Goods Wholesalers LLC,
                       Unique Time Business Centre,
                       Union Co op Society 1st Floor,
-                      Office No 8
-                      Ral Al Khor Industrial Area 3
+                      Office No 8,
+                      Ral Al Khor Industrial Area 3,
+                      Dubai, UAE
                       </a>
                     </p>
                     <div className="mini-map">
